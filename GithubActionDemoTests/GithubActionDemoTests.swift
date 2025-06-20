@@ -7,8 +7,12 @@
 
 import XCTest
 
-final class GithubActionDemoTests: XCTestCase {
-    func testExample() {
-        XCTAssertEqual(2 + 2, 4)
+class MathUtilsTests: XCTestCase {
+    func testSquare() {
+        let mathUtils = MathUtils()
+        let input = 5
+        let expected = 25
+        let result = mathUtils.square(number: input)
+        XCTAssertEqual(result, expected, "The square of \(input) should be \(expected)")
     }
 }
