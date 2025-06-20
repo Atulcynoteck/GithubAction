@@ -2,16 +2,13 @@
 //  GithubActionDemoTests.swift
 //  GithubActionDemoTests
 //
-//  Created by user on 19/06/25.
+//  Created by user on 20/06/25.
 //
 
-import Testing
-@testable import GithubActionDemo
+import XCTest
 
-struct GithubActionDemoTests {
-
-    @Test func example() async throws {
-        // Write your test here and use APIs like `#expect(...)` to check expected conditions.
+final class GithubActionDemoTests: XCTestCase {
+    func testExample() {
+        XCTAssertEqual(2 + 2, 4)
     }
-
 }
