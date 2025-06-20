@@ -28,7 +28,7 @@ jobs:
           xcodebuild build-for-testing \
             -workspace "$file_to_build" \
             -scheme "$scheme" \
-            -destination "platform=$platform,name=$device"
+            -destination 'platform=iOS Simulator,name=iPhone 16'
 
       - name: Test
         env:
@@ -40,4 +40,4 @@ jobs:
           xcodebuild test-without-building \
             -workspace "$file_to_build" \
             -scheme "$scheme" \
-            -destination "platform=$platform,name=$device"
+            -destination 'platform=iOS Simulator,name=iPhone 16'
