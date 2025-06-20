@@ -24,7 +24,8 @@ jobs:
       - name: Build and test
         run: |
           xcodebuild clean test \
-            -workspace GithubActionDemo.xcworkspace \
-            -scheme GithubActionDemo \
-            -sdk iphonesimulator \
-            -destination 'platform=iOS Simulator,name=iPhone 14'
+          -workspace GithubActionDemo.xcworkspace \
+          -scheme GithubActionDemo \
+          -sdk iphonesimulator \
+          -destination 'platform=iOS Simulator,name=iPhone 14'
+
