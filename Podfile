@@ -6,6 +6,7 @@ target 'GithubActionDemo' do
   use_frameworks!
 
   # Pods for GithubActionDemo
+pod 'IQKeyboardManagerSwift', '6.5.16'
 
   target 'GithubActionDemoTests' do
     inherit! :search_paths
