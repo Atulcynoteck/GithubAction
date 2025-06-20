@@ -65,15 +65,11 @@
 		};
 		CECDA21A2E043B18009B6AFF /* GithubActionDemoTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = GithubActionDemoTests;
 			sourceTree = "<group>";
 		};
 		CECDA2242E043B18009B6AFF /* GithubActionDemoUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = GithubActionDemoUITests;
 			sourceTree = "<group>";
 		};
@@ -117,7 +113,6 @@
 				4E59669B261AEF9BB1B852FC /* Pods-GithubActionDemoTests.debug.xcconfig */,
 				666AD640DF4681C66E2ECDAF /* Pods-GithubActionDemoTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
