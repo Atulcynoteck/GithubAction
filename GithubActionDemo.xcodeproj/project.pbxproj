@@ -65,15 +65,11 @@
 		};
 		CE2634362E09138C008B3000 /* GithubActionDemoTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = GithubActionDemoTests;
 			sourceTree = "<group>";
 		};
 		CE2634402E09138C008B3000 /* GithubActionDemoUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = GithubActionDemoUITests;
 			sourceTree = "<group>";
 		};
@@ -149,7 +145,6 @@
 				2F324559B260FA968F7F04F8 /* Pods-GithubActionDemoTests.debug.xcconfig */,
 				8ED0F6D80AD881CEE4FEE95C /* Pods-GithubActionDemoTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -164,6 +159,7 @@
 				CE2634192E09138A008B3000 /* Sources */,
 				CE26341A2E09138A008B3000 /* Frameworks */,
 				CE26341B2E09138A008B3000 /* Resources */,
+				79A13B8E6FF784858A92F4A1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -207,6 +203,7 @@
 				CE2634392E09138C008B3000 /* Sources */,
 				CE26343A2E09138C008B3000 /* Frameworks */,
 				CE26343B2E09138C008B3000 /* Resources */,
+				461E0ED07FF71677CFF90B1C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -312,6 +309,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		461E0ED07FF71677CFF90B1C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GithubActionDemo-GithubActionDemoUITests/Pods-GithubActionDemo-GithubActionDemoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GithubActionDemo-GithubActionDemoUITests/Pods-GithubActionDemo-GithubActionDemoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GithubActionDemo-GithubActionDemoUITests/Pods-GithubActionDemo-GithubActionDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		573C8974570AF33C34EC8185 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -332,6 +346,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79A13B8E6FF784858A92F4A1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GithubActionDemo/Pods-GithubActionDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GithubActionDemo/Pods-GithubActionDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GithubActionDemo/Pods-GithubActionDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D5FC88D5E69492AD854A846D /* [CP] Check Pods Manifest.lock */ = {
@@ -405,6 +436,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7QS7VD8U2C;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GithubActionDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -434,6 +466,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7QS7VD8U2C;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GithubActionDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
