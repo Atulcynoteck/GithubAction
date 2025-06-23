@@ -1,0 +1,39 @@
+name: Pull Request
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set Xcode Version
+        run: sudo xcode-select -s /Applications/Xcode_15.2.app
+
+      - name: Install CocoaPods
+        run: pod install
+
+      - name: List available devices
+        run: xcrun xctrace list devices
+
+      - name: Build for Testing
+        run: |
+          xcodebuild clean build-for-testing \
+            -workspace GithubActionDemo.xcworkspace \
+            -scheme GithubActionDemo \
+            -sdk iphonesimulator \
+            -destination 'platform=iOS Simulator,name=iPhone 16'
+
+      - name: Run Tests
+        run: |
+          xcodebuild test-without-building \
+            -workspace GithubActionDemo.xcworkspace \
+            -scheme GithubActionDemo \
+            -sdk iphonesimulator \
+            -destination 'platform=iOS Simulator,name=iPhone 16'
