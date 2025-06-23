@@ -5,13 +5,13 @@
 //  Created by user on 23/06/25.
 //
 
-import Testing
+import XCTest
 @testable import GithubActionDemo
 
-struct GithubActionDemoTests {
+class GithubActionDemoTests: XCTestCase {
 
-    @Test func example() async throws {
-        // Write your test here and use APIs like `#expect(...)` to check expected conditions.
+    func testExample() throws {
+        XCTAssertEqual(2*2, 4)
     }
 
 }
