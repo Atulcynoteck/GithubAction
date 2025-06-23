@@ -1,0 +1,9 @@
+# Pods
+Pods/
+
+# Xcode
+*.xcuserstate
+*.xcuserdatad/
+*.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+
